@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+    <title>F4LIFE - Moradias Universitárias</title>
+</head>
+<body>
+    <header>
+        <figure>
+            <img id="logo" src="./img/logo.png">
+        </figure>
+        
+        <nav>
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">QUEM SOMOS</a></li>
+                <li><a href="">ENCONTRE SUA MORADIA</a></li>
+                <li><a href="">CONTATO</a></li>
+                <li>
+                    <button>ENTRAR</button>
+                </li>
+            </ul>         
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <section id="container-cover">
+                <img id="cover" src="./img/capa.png.jpg">
+                <div class="item-cover">
+                    <h1 class="titulo-principal">Moradia universitária como você sempre quis.</h1>
+                    <p>Moradia compatilhada ou kitnet individual na melhor localização para estudantes. Tudo incluso, sem burocracia, serviços extras e muito mais!</p>
+                    <form>
+                        <div id="flex-cadastro">
+                            <input id="cadastro" placeholder="Digite seu e-mail.">
+                            <button>CADASTRE-SE!</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+            <section>
+                <div id="fundo-azul"></div>
+                <div class="container" style="height: 800px;">
+                    <img class="foto-section" src="./img/section-1.png.jpg">
+                    <div class="item">
+                        <h1 class="titulo-section-left">More perto da faculdade e de seus colegas</h1>
+                        <p>Temos residencias disponíveis perto das maiores instituições de ensino do país, para você não perder tempo se locomovendo.  </p>
+                        <button>BUSQUE POR UNIVERSIDADE</button>
+                    </div>
+                </div>
+                <div class="container" style="height: 800px;">
+                    <div class="item-2">
+                        <h1 class="titulo-section-right">Pense nos estudos. Esqueça os boletos.</h1>
+                        <p id="p-right">Os valores das contas de água, luz, internet, IPTU e condomínio nós administramos para você poder focar no que realmente importa.</p>
+                        <button id="button-invertido">SAIBA MAIS</button>
+                    </div>
+                    <img class="foto-section-2" src="./img/section-2.png.jpg">
+                </div>
+                <div class="container" style="height: 800px;">
+                    <img class="foto-section" src="./img/section-3.png.jpg">
+                    <div class="item">
+                        <h1 class="titulo-section-left">Mudança sem estresse</h1>
+                        <p>Nossas moradias são todas reformadas, mobiliadas e otimizadas para você ter a melhor experiência estudantil sem se preocupar com a logística.</p>
+                        <button>CONFIRA A DISPONIBILIDADE</button>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h1>ENCONTRE UMA MORADIA</h1>
+                <hr style="color:#6CDDCF">
+                <div class="container" style="height: 600px;">
+                    <div class="container-galeria">
+                        <img class="moradia" src="./img/moradia-1.png.jpg">
+                        <div class="item-galeria">
+                            <h3>Kitnet 2 quartos com cozinha</h3>
+                            <h4>Universidade próxima: USP</h4>
+                            <h5>Av. Nossa Sra. da Assunção - Rio Pequeno, São Paulo - SP</h5>
+                            <h5>ver detalhes</h5>
+                        </div>
+                    </div>
+
+                    <div class="container-galeria">
+                        <img class="moradia" src="./img/moradia-2.png.jpg">
+                        <div class="item-galeria">
+                            <h3>República dos Canarinhos</h3>
+                            <h4>Universidade próxima: Unicamp</h4>
+                            <h5>Rua Dr. Antonio Augusto de Almeida, 1300 - Cidade Universitária, Campinas - SP</h5>
+                            <h5>ver detalhes</h5>
+                        </div>
+                    </div>
+                    
+                    <div class="container-galeria">
+                        <img class="moradia" src="./img/moradia-3.png.jpg">
+                        <div class="item-galeria">
+                            <h3>Kitnet Estúdio 1 quarto</h3>
+                            <h4>Universidade próxima: UFPB</h4>
+                            <h5>R. Comerciante Jose Chagas Feitosa, 2000 - Castelo Branco, João Pessoa - PB</h5>
+                            <h5>ver detalhes</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <h1 class="titulo-menor">Procure pelo imóvel ideal</h1>
+                <div>
+                    <form class="container-busca">
+                        <select>
+                            <option>LOCALIZAÇÃO</labe>
+                            <option>AM</option>
+                        </select>
+                        <select>
+                            <option>QTD. QUARTOS</labe>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4 ou mais</option>
+                        </select>
+                        <select>
+                            <option>PREÇO</labe>
+                            <option>Até 300 reais</option>
+                            <option>Entre 300 e 600 reais</option>
+                            <option>Entre 600 e 900 reais</option>
+                            <option>Acima de 900 reais</option>
+                        </select>
+                        <select>
+                            <option>TIPO</labe>
+                            <option>Kitnet</option>
+                            <option>República</option>
+                        </select>
+                        
+                        <button id="button-menor">BUSCAR IMÓVEL</button>
+                    </form>
+                </div>
+            </section>
+            <section class="container-vantagens">
+                <h1 class="titulo-branco">VANTAGENS DE SER <div style="color: #6CDDCF; display: inline;">F4LIFE</div></h1>
+                <hr>
+                <div class="item-3">
+                    <div class="container-galeria">
+                        <img src="./img/icone-1.png" style="width: 100px; height: 100px;">
+                        <h2>SERVIÇOS GERAIS</h2>
+                        <div class="item-vantagens">
+                        
+                            <p>
+                                Precisando de serviços de limpeza, lavanderia ou reparos? Basta abrir um chamado de atendimento online e nossa equipe de pessoas terceirizadas irá até você para te ajudar.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="container-galeria">
+                        <img src="./img/icone-2.png" style="width: 100px; height: 100px;">
+                        <h2>SEM BUROCRACIA</h2>
+                        <div class="item-vantagens">
+                        
+                            <p>
+                                Os contratos de aluguel são mensais, sem taxas de cancelamento ou calção. Aqui você paga somente pelo tempo que esteve na moradia.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="container-galeria">
+                        <img src="./img/icone-3.png" style="width: 100px; height: 100px;">
+                        <h2>TRAGA SEU PET</h2>
+                        <div class="item-vantagens">
+                        
+                            <p>
+                                Nós sabemos que uma casa só se torna lar se seu pet também puder morar nele, por isso todas as nossas kitnets individuais aceitam animais de estimação.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section  style="height: 850px;">
+                <h1>ESCOLHA POR TIPO DE MORADIA</h1>
+                <hr>
+                <div class="container">
+                    <div class="item-moradias">
+                        <h2 class="verde">Repúblicas</h2>
+                        <p>Para quem procura uma experiência universitária integrativa e coletiva</p>
+                        <img src="./img/republica.png.jpg" id="republica">
+                        <button class="button-frente">ENCONTRE UMA REPÚBLICA</button>  
+                    </div>
+
+                    <div class="item-moradias">
+                        <h2 class="verde">Kitnets</h2>
+                        <p>Para quem procura estudar no conforto de um espaço individual</p>
+                        <img src="./img/kitnet.png.jpg" id="kitnet">
+                        <button class="button-frente">ENCONTRE UMA KITNET</button>
+                    </div>
+                </div>
+            </section>
+            <section style="height: 1000px;">
+                <h1 class="titulo-menor">Veja o que outros estudantes acharam</h1>
+                <div class="container">
+                    <div class="item-estudantes">
+                        <div class="container-auxiliar">
+                            <img src="./img/estudante-1.png" class="foto-estudante">
+                            <h3>Andréia Regina</h3>
+                            <img src="./img/localizacao.png" style="width: 15px; height: 20px;">
+                            <h4 style="display: inline; margin-left: 5px;">Estudante da UFRJ</h4>
+                        </div>
+                        <hr id="traco-verde">
+                        <p>
+                            Eu vim para o Rio estudar medicina veterinária porque na minha cidade não tem esse curso, e nunca tinha morado longe da minha família então sempre me preocupei demais com todos os problemas envolvendo alugar um imóvel para morar sozinha em uma cidade grande. Mas graças a F4LIFE encontrei uma kitnet para dividir com uma amiga e tudo deu muito certo. Sem estresse. Recomendo bastante!
+                        </p>
+                    </div>
+                    <div class="item-estudantes">
+                        <div class="container-auxiliar">
+                            <img src="./img/estudante-2.jpg" class="foto-estudante">
+                            <h3>Marco Antônio</h3>
+                            <img src="./img/localizacao.png" style="width: 15px; height: 20px;">
+                            <h4 style="display: inline; margin-left: 5px;">Estudante da Nassau</h4>
+                        </div>
+                        <hr id="traco-verde">
+                        <p>
+                            Vim pra Recife acompanhar minha namorada na faculdade e precisávamos de um espaço com privacidade que fosse perto das aulas e do estágio dela. Nenhuma imobiliária tradicional conseguiu nos mostrar um imóvel que nos encantasse como esse que foi todo reformado e mobiliado pela equipe da F4LIFE. Estamos muito satisfeitos...
+                        </p>
+                    </div>
+                    <div class="item-estudantes">
+                        <div class="container-auxiliar">
+                            <img src="./img/estudante-3.jpg" class="foto-estudante">
+                            <h3>Carolina Dias</h3>
+                            <img src="./img/localizacao.png" style="width: 15px; height: 20px;">
+                            <h4 style="display: inline; margin-left: 5px;">Estudante da UFCE</h4>
+                        </div>
+                        <hr id="traco-verde">
+                        <p>
+                            Sem dúvida a melhor escolha que já fiz foi entrar em contato com eles para encontrar uma república universitária para mim. Consegui morar numa distância a pé da faculdade, tenho qualidade de vida, não me preocupo com nada em relação a mobilia, pagar as contas, contratação de serviços, tudo o que eu preciso eu consigo resolver online sem tirar tempo dos meus estudos e ainda fiz vários amigos. SImplesmente perfeito!
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <div class="footer-bar">
+            <img id="footer-logo" src="./img/logo.png">
+            <ul class="social-media">
+                <li><a href=""><img src="./img/whatsapp.png.png"></a></li>
+                <li><a href=""><img src="./img/facebook.png.png"></a></li>
+                <li><a href=""><img src="./img/instagram.png.png"></a></li>
+                <li><a href=""><img src="./img/twitter.png.png"></a></li>
+            </ul>    
+        </div>
+        <hr>
+        <div class="container-footer">
+            <ul class="container-listas">
+                <h4>QUEM SOMOS</h4>
+                <li><a href="">A EQUIPE</a></li>
+                <li><a href="">BENEFÍCIOS</a></li>
+            </ul>
+            <ul class="container-listas">
+                <h4>MORADIAS</h4>
+                <li><a href="">MORADIA COMPARTILHADA</a></li>
+                <li><a href="">KITNET INDIVIDUAL</a></li>
+            </ul>
+            <ul class="container-listas">
+                <h4>CENTRAL DE AJUDA</h4>
+                <li><a href="">CONTATO</a></li>
+                <li><a href="">FAQ</a></li>
+                <li><a href="">OUVIDORIA</a></li>
+            </ul>
+            <ul class="container-listas">
+                <h4>TRABALHE COM A GENTE</h4>
+                <li><a href="">CORRETORIA</a></li>
+                <li><a href="">ARQUITETURA</a></li>
+                <li><a href="">PARCERIAS</a></li>
+            </ul>     
+        </div>
+        <P style="margin-left: 92px; margin-bottom: 10px; width: auto;">© 2023 F4LIFE - MORADIAS UNIVERSITÁRIAS. 18.837.890/0001-26</P>
+        <P style="margin-left: 92px; margin-bottom: 92px; width: auto;">Rua do Amanhã, 1890 - São Paulo, SP</P>
+    </footer>
+</body>
+</html>
