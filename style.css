@@ -3,6 +3,7 @@
     padding: 0;
     width: 100%;
     font-family: Inter;
+    font-size: 12pt;
 }
 
 
@@ -54,14 +55,14 @@ button {
     color: white;
     width: 290px;
     height: 57px;
-    font-size: 14pt;
+    font-size: 12pt;
 }
 
 #button-invertido {
     color: white;
     width: 290px;
     height: 57px;
-    font-size: 14pt;
+    font-size: 12pt;
     border: 2px solid #6CDDCF;
 }
 
@@ -90,6 +91,7 @@ select {
     width: 222px;
     height: 57px;
     border: 2px solid #6CDDCF;
+    color: #9A9A9A;
 }
 
 
@@ -102,6 +104,7 @@ p {
 a {
     color: white;
     font-size: 12pt;
+    text-decoration: none;
 }
 
 hr {
@@ -197,8 +200,8 @@ h2.verde {
 #fundo-azul {
     background-color: #132235;
     position: absolute;
-    top: 1450px;
-    height: 1200px;
+    top: 1480px;
+    height: 1150px;
 }
 
 .container {
@@ -219,6 +222,7 @@ h2.verde {
 }
 
 .container-vantagens {
+    margin-top: 80px;
     height: 900px;
     background-color: #132235;
 }
@@ -243,7 +247,6 @@ h2.verde {
 .item {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     width: 50%;
     row-gap: 50px;
     margin-right: 90px;
@@ -254,7 +257,6 @@ h2.verde {
     display: flex;
     flex-direction: column;
     align-items: end;
-    width: 50%;
     row-gap: 50px;
     margin-left: 90px;
     z-index: 1;
@@ -322,7 +324,7 @@ h2.verde {
     border: 2px solid #6CDDCF;
     padding: 70px 30px;
     width: 370px;
-    height: 650px;
+    height: 640px;
     margin-top: 60px;
 }
 
