@@ -32,11 +32,14 @@ Access by clicking on this link https://lying-building.surge.sh (deploy).
 
 ![image](https://user-images.githubusercontent.com/104652600/236913346-238718c8-5451-4c98-97e3-d5f3bd8cc9a4.png)
 
+ 
 * Tablet version
+
 ![image](https://user-images.githubusercontent.com/104652600/236913797-20df592f-65db-4809-9c44-0d5707d1db45.png)
 
 ![image](https://user-images.githubusercontent.com/104652600/236913932-d464a7f7-d7db-4b8e-af41-6a2bb832a8da.png)
 
+ 
 * Mobile version
 
 ![image](https://user-images.githubusercontent.com/104652600/236913640-32add39c-62aa-4bba-9e90-2d72946622f7.png)
