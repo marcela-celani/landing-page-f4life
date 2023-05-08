@@ -80,6 +80,17 @@ button#entrar {
     height: 35px;
 }
 
+button.buttonHover {
+    transform: scale(1.1);
+    transition: transform .2s;
+}
+
+button.buttonClick {
+    background-color: #6CDDCF;
+    border: 1px solid #6cddcf;
+    color: #132235;
+}
+
 button#entrar:hover {
     border: 1px solid #6CDDCF;
     color: white;
@@ -124,6 +135,10 @@ select {
     padding: 10px;
 }
 
+label {
+    display: none;
+}
+
 
 /* Configurações de texto */
 p {
@@ -138,7 +153,7 @@ a {
     position: relative;
 }
   
-a::before {
+li a::before {
     content: '';
     position: absolute;
     width: 100%;
@@ -152,7 +167,7 @@ a::before {
     
 }
   
-a:hover::before {
+li a:hover::before {
     transform-origin: left;
     transform: scaleX(1);
 }
@@ -459,9 +474,9 @@ footer {
 }
 
 #footer-logo {
-    width: 70px; 
-    height: 70px;
-    margin-left: 70px;
+    width: 65px; 
+    height: 65px;
+    margin-left: 80px;
 }
 
 .social-media{
@@ -475,7 +490,7 @@ footer {
 
 .container-footer {
     display: flex;
-    height: 325px;
+    height: 300px;
     align-items: flex-start;
     column-gap: 5vw;
     margin: 72px 92px;

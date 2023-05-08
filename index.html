@@ -10,7 +10,7 @@
     <!-- icone menu sanduiche -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>F4LIFE - Moradias Universitárias</title>
-    <script src="./script.js"></script>
+    <script src="./script.js" defer></script>
 </head>
 <body>
     <header>
@@ -39,8 +39,9 @@
                     <h1 class="titulo-principal">Moradia universitária do seu jeito.</h1>
                     <p>Coletiva ou individual, na melhor localização para estudantes. Tudo incluso, sem burocracia, serviços extras e muito mais!</p>
                     <form id="flex-cadastro">
+                        <label for="cadastro"></label>
                         <input id="cadastro" placeholder="Digite seu e-mail.">
-                        <button type="submit">CADASTRE-SE!</button>
+                        <button onclick="clickButton(event)" onmouseout="unhoverButton(event)" onmouseover="hoverButton(event)" type="submit">CADASTRE-SE!</button>
                     </form>
                 </div>
             </section>
@@ -52,14 +53,14 @@
                     <div class="item" id="flextop">
                         <h1 class="titulo-section-left">More perto da faculdade e de seus colegas</h1>
                         <p>Temos residencias disponíveis perto das maiores instituições de ensino do país, para você não perder tempo se locomovendo.  </p>
-                        <button>BUSQUE POR UNIVERSIDADE</button>
+                        <button onclick="clickButton(event)" onmouseout="unhoverButton(event)" onmouseover="hoverButton(event)">BUSQUE POR UNIVERSIDADE</button>
                     </div>
                 </div>
                 <div class="container" style="height: 800px;">
                     <div class="item-2">
                         <h1 class="titulo-section-right">Pense nos estudos. Esqueça os boletos.</h1>
                         <p id="p-right">Os valores das contas de água, luz, internet, IPTU e condomínio nós administramos para você poder focar no que realmente importa.</p>
-                        <button id="button-invertido">SAIBA MAIS</button>
+                        <button id="button-invertido" onclick="clickButton(event)" onmouseout="unhoverButton(event)" onmouseover="hoverButton(event)">SAIBA MAIS</button>
                     </div>
                     <img class="foto-section-2" src="./img/section-2.png.jpg">
                 </div>
@@ -68,7 +69,7 @@
                     <div class="item" id="flexend">
                         <h1 class="titulo-section-left">Mudança sem estresse</h1>
                         <p>Nossas moradias são todas reformadas, mobiliadas e otimizadas para você ter a melhor experiência estudantil sem se preocupar com a logística.</p>
-                        <button>CONFIRA A DISPONIBILIDADE</button>
+                        <button onclick="clickButton(event)" onmouseout="unhoverButton(event)" onmouseover="hoverButton(event)">CONFIRA A DISPONIBILIDADE</button>
                     </div>
                 </div>
             </section>
@@ -135,7 +136,7 @@
                             <option>República</option>
                         </select>
                         
-                        <button id="button-menor">BUSCAR IMÓVEL</button>
+                        <button onclick="clickButton(event)" onmouseout="unhoverButton(event)" onmouseover="hoverButton(event)" id="button-menor">BUSCAR IMÓVEL</button>
                     </form>
                 </div>
             </section>
@@ -183,14 +184,14 @@
                         <h2 class="verde">Repúblicas</h2>
                         <p>Para quem procura uma experiência universitária integrativa e coletiva</p>
                         <img src="./img/republica.png.jpg" id="republica">
-                        <button class="button-frente">ENCONTRE UMA REPÚBLICA</button>  
+                        <button onclick="clickButton(event)" onmouseout="unhoverButton(event)" onmouseover="hoverButton(event)" class="button-frente">ENCONTRE UMA REPÚBLICA</button>  
                     </div>
 
                     <div class="item-moradias">
                         <h2 class="verde">Kitnets</h2>
                         <p>Para quem procura estudar no conforto de um espaço individual</p>
                         <img src="./img/kitnet.png.jpg" id="kitnet">
-                        <button class="button-frente">ENCONTRE UMA KITNET</button>
+                        <button onclick="clickButton(event)" onmouseout="unhoverButton(event)" onmouseover="hoverButton(event)" class="button-frente">ENCONTRE UMA KITNET</button>
                     </div>
                 </div>
             </section>
