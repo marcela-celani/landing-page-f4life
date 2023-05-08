@@ -5,25 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <!-- google fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+    <!-- icone menu sanduiche -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>F4LIFE - Moradias Universitárias</title>
+    <script src="./script.js" defer></script>
 </head>
 <body>
     <header>
         <figure>
-            <img id="logo" src="./img/logo.png">
+            <a href="#"><img id="logo" src="./img/logo.png"></a>
         </figure>
-        
-        <nav>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <nav id="menu-burguer">
             <ul>
                 <li><a href="">HOME</a></li>
-                <li><a href="">QUEM SOMOS</a></li>
-                <li><a href="">ENCONTRE SUA MORADIA</a></li>
-                <li><a href="">CONTATO</a></li>
+                <li><a href="#servicos">SERVIÇOS</a></li>
+                <li><a href="#encontre-moradia">MORADIAS</a></li>
+                <li><a href="#opinioes">OPINIÕES</a></li>
                 <li>
-                    <button>ENTRAR</button>
+                    <button id="entrar">ENTRAR</button>
                 </li>
-            </ul>         
+            </ul>       
         </nav>
     </header>
 
@@ -34,47 +38,46 @@
                 <div class="item-cover">
                     <h1 class="titulo-principal">Moradia universitária do seu jeito.</h1>
                     <p>Coletiva ou individual, na melhor localização para estudantes. Tudo incluso, sem burocracia, serviços extras e muito mais!</p>
-                    <form>
-                        <div id="flex-cadastro">
-                            <input id="cadastro" placeholder="Digite seu e-mail.">
-                            <button>CADASTRE-SE!</button>
-                        </div>
+                    <form id="flex-cadastro">
+                        <label for="cadastro"></label>
+                        <input id="cadastro" placeholder="Digite seu e-mail.">
+                        <button onclick="clickButton(event)" onmouseout="unhoverButton(event)" onmouseover="hoverButton(event)" type="submit">CADASTRE-SE!</button>
                     </form>
                 </div>
             </section>
 
             <section>
                 <div id="fundo-azul"></div>
-                <div class="container" style="height: 800px;">
+                <div id="servicos" class="container" style="height: 870px;">
                     <img class="foto-section" src="./img/section-1.png.jpg">
-                    <div class="item">
+                    <div class="item" id="flextop">
                         <h1 class="titulo-section-left">More perto da faculdade e de seus colegas</h1>
                         <p>Temos residencias disponíveis perto das maiores instituições de ensino do país, para você não perder tempo se locomovendo.  </p>
-                        <button>BUSQUE POR UNIVERSIDADE</button>
+                        <button onclick="clickButton(event)" onmouseout="unhoverButton(event)" onmouseover="hoverButton(event)">BUSQUE POR UNIVERSIDADE</button>
                     </div>
                 </div>
                 <div class="container" style="height: 800px;">
                     <div class="item-2">
                         <h1 class="titulo-section-right">Pense nos estudos. Esqueça os boletos.</h1>
                         <p id="p-right">Os valores das contas de água, luz, internet, IPTU e condomínio nós administramos para você poder focar no que realmente importa.</p>
-                        <button id="button-invertido">SAIBA MAIS</button>
+                        <button id="button-invertido" onclick="clickButton(event)" onmouseout="unhoverButton(event)" onmouseover="hoverButton(event)">SAIBA MAIS</button>
                     </div>
                     <img class="foto-section-2" src="./img/section-2.png.jpg">
                 </div>
                 <div class="container" style="height: 800px;">
                     <img class="foto-section" src="./img/section-3.png.jpg">
-                    <div class="item">
+                    <div class="item" id="flexend">
                         <h1 class="titulo-section-left">Mudança sem estresse</h1>
                         <p>Nossas moradias são todas reformadas, mobiliadas e otimizadas para você ter a melhor experiência estudantil sem se preocupar com a logística.</p>
-                        <button>CONFIRA A DISPONIBILIDADE</button>
+                        <button onclick="clickButton(event)" onmouseout="unhoverButton(event)" onmouseover="hoverButton(event)">CONFIRA A DISPONIBILIDADE</button>
                     </div>
                 </div>
             </section>
 
             <section>
-                <h1 style="margin-top: 60px">ENCONTRE UMA MORADIA</h1>
-                <hr style="color:#6CDDCF">
-                <div class="container" style="height: 700px;">
+                <h1 id="h1-encontre" style="margin-top: 60px">ENCONTRE UMA MORADIA</h1>
+                <hr color="lightgray">
+                <div id="encontre-moradia" class="container">
                     <div class="container-galeria">
                         <img class="moradia" src="./img/moradia-1.png.jpg">
                         <div class="item-galeria">
@@ -110,30 +113,30 @@
                 <div>
                     <form class="container-busca">
                         <select>
-                            <option>LOCALIZAÇÃO</labe>
+                            <option selected disabled>LOCALIZAÇÃO</option>
                             <option>AM</option>
                         </select>
                         <select>
-                            <option>QTD. QUARTOS</labe>
+                            <option selected disabled>QTD. QUARTOS</option>
                             <option>1</option>
                             <option>2</option>
                             <option>3</option>
                             <option>4 ou mais</option>
                         </select>
                         <select>
-                            <option>PREÇO</labe>
+                            <option selected disabled>PREÇO</option>
                             <option>Até 300 reais</option>
                             <option>Entre 300 e 600 reais</option>
                             <option>Entre 600 e 900 reais</option>
                             <option>Acima de 900 reais</option>
                         </select>
                         <select>
-                            <option>TIPO</labe>
+                            <option>TIPO</option>
                             <option>Kitnet</option>
                             <option>República</option>
                         </select>
                         
-                        <button id="button-menor">BUSCAR IMÓVEL</button>
+                        <button onclick="clickButton(event)" onmouseout="unhoverButton(event)" onmouseover="hoverButton(event)" id="button-menor">BUSCAR IMÓVEL</button>
                     </form>
                 </div>
             </section>
@@ -173,28 +176,28 @@
                     </div>
                 </div>
             </section>
-            <section  style="height: 950px;">
+            <section id="tipo-moradia">
                 <h1 style="margin-top: 80px;">ESCOLHA POR TIPO DE MORADIA</h1>
-                <hr>
+                <hr color="lightgray">
                 <div class="container">
                     <div class="item-moradias">
                         <h2 class="verde">Repúblicas</h2>
                         <p>Para quem procura uma experiência universitária integrativa e coletiva</p>
                         <img src="./img/republica.png.jpg" id="republica">
-                        <button class="button-frente">ENCONTRE UMA REPÚBLICA</button>  
+                        <button onclick="clickButton(event)" onmouseout="unhoverButton(event)" onmouseover="hoverButton(event)" class="button-frente">ENCONTRE UMA REPÚBLICA</button>  
                     </div>
 
                     <div class="item-moradias">
                         <h2 class="verde">Kitnets</h2>
                         <p>Para quem procura estudar no conforto de um espaço individual</p>
                         <img src="./img/kitnet.png.jpg" id="kitnet">
-                        <button class="button-frente">ENCONTRE UMA KITNET</button>
+                        <button onclick="clickButton(event)" onmouseout="unhoverButton(event)" onmouseover="hoverButton(event)" class="button-frente">ENCONTRE UMA KITNET</button>
                     </div>
                 </div>
             </section>
-            <section style="height: 1000px;">
+            <section id="opinioes">
                 <h1 class="titulo-menor">Veja o que outros estudantes acharam</h1>
-                <div class="container">
+                <div class="container-estudante">
                     <div class="item-estudantes">
                         <div class="container-auxiliar">
                             <img src="./img/estudante-1.png" class="foto-estudante">
@@ -237,12 +240,12 @@
     </main>
     <footer>
         <div class="footer-bar">
-            <img id="footer-logo" src="./img/logo.png">
+            <img id="footer-logo" src="./img/logo-quadrada.png">
             <ul class="social-media">
-                <li><a href=""><img src="./img/whatsapp.png.png"></a></li>
-                <li><a href=""><img src="./img/facebook.png.png"></a></li>
-                <li><a href=""><img src="./img/instagram.png.png"></a></li>
-                <li><a href=""><img src="./img/twitter.png.png"></a></li>
+                <li><a href="https://www.whatsapp.com/?lang=pt_br"><img src="./img/whatsapp.png.png"></a></li>
+                <li><a href="https://www.facebook.com"><img src="./img/facebook.png.png"></a></li>
+                <li><a href="https://www.instagram.com"><img src="./img/instagram.png.png"></a></li>
+                <li><a href="https://twitter.com/home"><img src="./img/twitter.png.png"></a></li>
             </ul>    
         </div>
         <hr>
